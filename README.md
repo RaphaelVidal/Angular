@@ -1,4 +1,4 @@
 # Angular-Examples
  Angular codes
 
- This repository was created for pratice Angular.  
+ This repository was created for practice Angular.  
