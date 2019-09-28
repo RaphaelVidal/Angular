@@ -1,4 +1,4 @@
-class Carro {  private modelo: string; private numeroDePortas: number; private velocidade: number = 0; 
+class Carro {  private modelo: string; private numeroDePortas: number; private velocidade: number = 0;
     constructor(pmodelo: string, pnumeroDePortas: number, pvelocidade: number) {
         this.modelo = pmodelo
         this.numeroDePortas = pnumeroDePortas
@@ -19,7 +19,7 @@ class Pessoa { private nome: string; private carroPreferido: string;   private c
     constructor(pnome: string, pcarroPreferido: string) { this.nome = pnome; this.carroPreferido = pcarroPreferido }
     public dizerNome(): string { return this.nome }
     public dizerCarroPreferido(): string { return this.carroPreferido }
-    public comprarCarro(pcarro: Carro): void { this.carro = pcarro }
+    public comprarCarro(pcarro: any): void { this.carro = pcarro }
     public dizerCarroQueTem(): string { return this.carro }
 }// fim pessoa
 
@@ -31,12 +31,7 @@ let listaDeCarros: Array<Carro> = [carroA,carroB,carroC]; // ou let listaDeCarro
 
 let concessionariaA = new Concessionaria('AV. Brasil', listaDeCarros);
 
-// console.log(concessionariaA.mostrarListaDeCarros()); 
-
-let pessoaA = new Pessoa('Emanuella Vidal','Sorento')
-
-pessoaA.comprarCarro(carroA);
-
-console.log(pessoaA.dizerCarroQueTem());
+let pessoaA = new Pessoa('Emanuella Vidal','Fusca')
+console.log(pessoaA.dizerCarroPreferido()); 
 
 

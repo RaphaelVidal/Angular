@@ -38,7 +38,5 @@ var carroC = new Carro('Fusca', 8, 32);
 // criar vetor de carros
 var listaDeCarros = [carroA, carroB, carroC]; // ou let listaDeCarros:Carro[] = [carroA,carroB,carroC];
 var concessionariaA = new Concessionaria('AV. Brasil', listaDeCarros);
-// console.log(concessionariaA.mostrarListaDeCarros()); 
-var pessoaA = new Pessoa('Emanuella Vidal', 'Sorento');
-pessoaA.comprarCarro(carroA);
-console.log(pessoaA.dizerCarroQueTem());
+var pessoaA = new Pessoa('Emanuella Vidal', 'Fusca');
+console.log(pessoaA.dizerCarroPreferido());
