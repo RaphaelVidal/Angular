@@ -20,3 +20,4 @@ concessionariaA.mostrarListaDeCarros().map(function (carro_f) {
     }
 });
 console.log(pessoaA.dizerCarroQueTem());
+// teste

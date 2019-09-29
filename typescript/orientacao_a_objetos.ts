@@ -21,3 +21,4 @@ if (carro_f['modelo'] == pessoaA.dizerCarroPreferido()) {
 })
 
 console.log(pessoaA.dizerCarroQueTem());
+// teste
